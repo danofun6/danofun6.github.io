@@ -6,19 +6,19 @@ Static website for [Peak Consults](https://www.peakconsults.com) — technology 
 
 ### Setup
 
-1. Push this repo to GitHub as `danofun6.github.io`
+1. Push this repo to GitHub as `<username>.github.io`
 2. The site auto-deploys from `master` branch root — no configuration needed for `*.github.io` repos
 
 ### Custom Domain (Cloudflare)
 
-The site is served via Cloudflare with a custom domain. The `CNAME` file is set to `www.peakconsults.com`.
+The site is served via Cloudflare with a custom domain. Update the `CNAME` file with your domain.
 
 **DNS Records in Cloudflare:**
 
-| Type  | Name  | Content                    |
-|-------|-------|----------------------------|
-| CNAME | www   | danofun6.github.io         |
-| CNAME | @     | danofun6.github.io         |
+| Type  | Name  | Content                        |
+|-------|-------|--------------------------------|
+| CNAME | www   | `<username>.github.io`         |
+| CNAME | @     | `<username>.github.io`         |
 
 > If using Cloudflare proxy (orange cloud), SSL mode should be set to **Full** or **Full (Strict)**.
 
@@ -42,7 +42,7 @@ The site is served via Cloudflare with a custom domain. The `CNAME` file is set 
 - Inter + JetBrains Mono fonts (Google Fonts)
 - Mobile responsive
 - Scroll-based fade-in animations
-- Contact form opens user's email client via `mailto:`
+- Contact form via [Formspree](https://formspree.io)
 
 ### Local Development
 
