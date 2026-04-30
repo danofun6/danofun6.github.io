@@ -394,7 +394,7 @@ p { color: var(--body); }
 /* ===== Service cards ===== */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(20px, 2.4vw, 32px);
 }
 .service-card {
@@ -868,16 +868,20 @@ p { color: var(--body); }
   .statement .container,
   .section-head,
   .cta-panel,
-  .service-grid,
   .about-grid,
   .contact-grid,
   .service-detail,
   .footer-top { grid-template-columns: 1fr; gap: 24px; }
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
 
   .statement .actions,
   .cta-panel .actions { justify-self: start; }
 
   .process { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .service-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 540px) {
