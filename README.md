@@ -1,6 +1,6 @@
-# Peak Consulting Website
+# Canon Stone Website
 
-Static website for [Peak Consulting](https://www.peakconsults.com) — technology and operations consulting.
+Static website for [Canon Stone](https://www.peakconsults.com) — operations and technology advisory.
 
 ## Deployment (GitHub Pages)
 
@@ -39,9 +39,9 @@ The site is served via Cloudflare with a custom domain. Update the `CNAME` file 
 ### Tech Stack
 
 - Pure HTML/CSS/JS — no frameworks, no build step
-- Inter + JetBrains Mono fonts (Google Fonts)
-- Mobile responsive
-- Scroll-based fade-in animations
+- Source Serif 4 + Inter (Google Fonts)
+- Mobile responsive, accessibility-focused (skip link, ARIA, focus rings)
+- Editorial typography with drop caps, Roman numerals, and hairline rules
 - Contact form via [Formspree](https://formspree.io)
 
 ### Local Development
