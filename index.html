@@ -11,28 +11,58 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.peakconsults.com">
   <link rel="canonical" href="https://www.peakconsults.com">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="theme-color" content="#0b0f14">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Peak Consults",
+    "url": "https://www.peakconsults.com",
+    "description": "Technology and operations consulting. We help businesses eliminate costly SaaS, automate operations, and implement AI to reduce overhead and increase revenue.",
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Operations Optimization",
+      "Automation & AI Implementation",
+      "Software Architecture",
+      "Technology Strategy"
+    ],
+    "knowsAbout": [
+      "SaaS rationalization",
+      "Business process automation",
+      "AI implementation",
+      "Software architecture",
+      "Technology strategy"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
   <header class="site-header">
     <nav class="nav-inner">
       <a href="index.html" class="logo">Peak<span>Consults</span></a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Toggle navigation">
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
+
+  <main id="main">
 
   <!-- Hero -->
   <section class="hero">
@@ -55,26 +85,34 @@
       <div class="section-header fade-in">
         <span class="section-label">What we do</span>
         <h2>Practical solutions, measurable results</h2>
-        <p>25 years of engineering experience applied to your business operations.</p>
+        <p>Engineering rigor from regulated, high-stakes industries — applied to your business operations.</p>
       </div>
       <div class="services-grid">
         <div class="service-card fade-in">
-          <div class="service-icon">&#9881;</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+          </div>
           <h3>Operations Optimization</h3>
           <p>Audit your current tools and workflows. Eliminate redundancy, cut unnecessary SaaS spend, and build systems that actually work.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon">&#9889;</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/></svg>
+          </div>
           <h3>Automation & AI</h3>
           <p>Implement intelligent automation and AI solutions that handle repetitive tasks, reduce errors, and free your team for higher-value work.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon">&#9670;</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-6 9 6-9 6-9-6Z"/><path d="m3 14 9 6 9-6"/><path d="m3 19 9 6 9-6" opacity=".5"/></svg>
+          </div>
           <h3>Software Architecture</h3>
           <p>Design robust, scalable software systems. Whether building new or fixing what's broken, we architect solutions that last.</p>
         </div>
         <div class="service-card fade-in">
-          <div class="service-icon">&#9678;</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" opacity=".5"/></svg>
+          </div>
           <h3>Technology Strategy</h3>
           <p>Align your technology investments with business goals. Make informed decisions about build vs. buy, vendor selection, and tech debt.</p>
         </div>
@@ -82,27 +120,36 @@
     </div>
   </section>
 
-  <!-- Stats -->
+  <!-- Process -->
   <section class="section">
     <div class="container">
-      <div class="stats-row fade-in">
-        <div class="stat">
-          <span class="stat-number">25+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">Nuclear</span>
-          <span class="stat-label">Energy Sector</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">AI</span>
-          <span class="stat-label">Implementation</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">ROI</span>
-          <span class="stat-label">Focused Results</span>
-        </div>
+      <div class="section-header fade-in">
+        <span class="section-label">How we work</span>
+        <h2>A pragmatic, four-step engagement</h2>
+        <p>Every project starts narrow, proves value early, and scales only what works.</p>
       </div>
+      <ol class="process-row fade-in">
+        <li class="process-step">
+          <span class="process-num">01</span>
+          <h3>Discover</h3>
+          <p>We map your tools, costs, and workflows to find where time and money are leaking.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-num">02</span>
+          <h3>Prioritize</h3>
+          <p>You get a short list of opportunities ranked by impact, effort, and risk &mdash; no guesswork.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-num">03</span>
+          <h3>Implement</h3>
+          <p>We deliver the highest-impact changes first, with measurable targets agreed up front.</p>
+        </li>
+        <li class="process-step">
+          <span class="process-num">04</span>
+          <h3>Hand off</h3>
+          <p>Your team owns what we build. Clear documentation, no vendor lock-in, no ongoing dependency.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -116,6 +163,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">

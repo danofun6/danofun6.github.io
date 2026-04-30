@@ -10,6 +10,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.peakconsults.com/contact.html">
   <link rel="canonical" href="https://www.peakconsults.com/contact.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="theme-color" content="#0b0f14">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,21 +20,25 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Header -->
   <header class="site-header">
     <nav class="nav-inner">
       <a href="index.html" class="logo">Peak<span>Consults</span></a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Toggle navigation">
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
+
+  <main id="main">
 
   <!-- Page Header -->
   <section class="page-header">
@@ -50,30 +57,30 @@
           <h2>Get in touch</h2>
           <p>Whether you have a specific challenge in mind or just want to explore how technology can improve your operations, we'd like to hear from you.</p>
 
-          <h3 style="margin-bottom: 12px; font-size: 1rem;">What to expect</h3>
-          <ul class="approach-list" style="margin-top: 0;">
-            <li><span class="check">&#10003;</span> Response within one business day</li>
-            <li><span class="check">&#10003;</span> Initial consultation to understand your needs</li>
-            <li><span class="check">&#10003;</span> Clear proposal with defined scope and outcomes</li>
-            <li><span class="check">&#10003;</span> No obligation, no hard sell</li>
+          <h3 class="contact-subheading">What to expect</h3>
+          <ul class="approach-list approach-list-tight">
+            <li><span class="check" aria-hidden="true">&#10003;</span> Response within one business day</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Initial consultation to understand your needs</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Clear proposal with defined scope and outcomes</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> No obligation, no hard sell</li>
           </ul>
         </div>
 
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeyrveq" method="POST">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeyrveq" method="POST" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@company.com">
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
             <select id="subject" name="subject">
               <option value="General Inquiry">General Inquiry</option>
               <option value="Operations Optimization">Operations Optimization</option>
-              <option value="Automation & AI">Automation & AI</option>
+              <option value="Automation &amp; AI">Automation &amp; AI</option>
               <option value="Software Architecture">Software Architecture</option>
               <option value="Technology Strategy">Technology Strategy</option>
             </select>
@@ -82,11 +89,18 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" required placeholder="Tell us about your business and what you're looking to improve..."></textarea>
           </div>
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="company-website">Leave this field blank</label>
+            <input type="text" id="company-website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
           <button type="submit" class="form-submit">Send message <span class="arrow">&rarr;</span></button>
+          <p class="form-privacy">We use your details only to respond to your inquiry. No newsletters, no sharing.</p>
         </form>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">

@@ -4,17 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.nav-links');
 
   if (toggle && nav) {
+    const setExpanded = (open) => {
+      nav.classList.toggle('open', open);
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.classList.toggle('active');
+      setExpanded(!nav.classList.contains('open'));
     });
 
     // Close nav on link click
     nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        toggle.classList.remove('active');
-      });
+      link.addEventListener('click', () => setExpanded(false));
+    });
+
+    // Close nav on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('open')) setExpanded(false);
     });
   }
 

@@ -10,28 +10,68 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.peakconsults.com/services.html">
   <link rel="canonical" href="https://www.peakconsults.com/services.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="theme-color" content="#0b0f14">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Peak Consults Services",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "position": 1,
+        "name": "Operations Optimization",
+        "description": "Technology stack audit, SaaS rationalization, workflow streamlining, and cost reduction with measurable targets."
+      },
+      {
+        "@type": "Service",
+        "position": 2,
+        "name": "Automation & AI Implementation",
+        "description": "Business process automation, AI strategy and implementation, custom AI tooling, data and reporting automation."
+      },
+      {
+        "@type": "Service",
+        "position": 3,
+        "name": "Software Architecture & Strategy",
+        "description": "System architecture design, legacy modernization, build-vs-buy analysis, technical debt reduction, scalability planning."
+      },
+      {
+        "@type": "Service",
+        "position": 4,
+        "name": "Technology Strategy",
+        "description": "Roadmap development, digital transformation planning, team and capability assessment, executive technology advisory."
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
   <header class="site-header">
     <nav class="nav-inner">
       <a href="index.html" class="logo">Peak<span>Consults</span></a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Toggle navigation">
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
+
+  <main id="main">
 
   <!-- Page Header -->
   <section class="page-header">
@@ -89,7 +129,7 @@
           <span class="service-detail-num">03</span>
           <h3>Software Architecture & Strategy</h3>
           <p>Bad architecture decisions compound over time. Whether you're building something new or inheriting a legacy system, the right architectural foundation saves enormous cost down the road.</p>
-          <p>With 25 years of experience building mission-critical software in the nuclear energy sector, we bring engineering rigor to every engagement.</p>
+          <p>With decades of experience building mission-critical software in regulated, high-stakes industries, we bring engineering rigor to every engagement.</p>
         </div>
         <div>
           <ul>
@@ -135,6 +175,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
