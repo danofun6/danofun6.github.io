@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { 'Accept': 'application/json' }
       }).then(res => {
         if (res.ok) {
-          form.innerHTML = '<p class="form-success">Thank you. We will be in touch within one business day.</p>';
+          form.innerHTML = '<p class="form-success">Thanks for reaching out. We&rsquo;ll be in touch within one business day.</p>';
         } else {
           btn.textContent = original;
           btn.disabled = false;
