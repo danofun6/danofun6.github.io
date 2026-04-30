@@ -1,6 +1,6 @@
-# Peak Consults Website
+# Peak Consulting Website
 
-Static website for [Peak Consults](https://www.peakconsults.com) — technology and operations consulting.
+Static website for [Peak Consulting](https://www.peakconsults.com) — technology and operations consulting.
 
 ## Deployment (GitHub Pages)
 

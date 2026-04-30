@@ -1,7 +1,7 @@
-// Mobile nav toggle
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav-links');
+  const header = document.querySelector('.site-header');
 
   if (toggle && nav) {
     const setExpanded = (open) => {
@@ -9,17 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.classList.toggle('active', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     };
-
-    toggle.addEventListener('click', () => {
-      setExpanded(!nav.classList.contains('open'));
-    });
-
-    // Close nav on link click
-    nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => setExpanded(false));
-    });
-
-    // Close nav on Escape
+    toggle.addEventListener('click', () => setExpanded(!nav.classList.contains('open')));
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setExpanded(false)));
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && nav.classList.contains('open')) setExpanded(false);
     });
@@ -31,28 +22,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const href = link.getAttribute('href');
     if (href === currentPage || (currentPage === '' && href === 'index.html')) {
       link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 
-  // Fade-in on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+  // Header rule appears once you've scrolled past the hero edge
+  if (header) {
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Contact form handler (Formspree)
+  // Contact form (Formspree)
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = form.querySelector('.form-submit');
-      btn.textContent = 'Sending...';
+      const original = btn.textContent;
+      btn.textContent = 'Sending…';
       btn.disabled = true;
 
       fetch(form.action, {
@@ -61,16 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { 'Accept': 'application/json' }
       }).then(res => {
         if (res.ok) {
-          form.innerHTML = '<p style="text-align:center;padding:40px 0;color:var(--accent);font-size:1.1rem;">Thanks for reaching out. We\'ll be in touch within one business day.</p>';
+          form.innerHTML = '<p class="form-success">Thanks for reaching out. We&rsquo;ll be in touch within one business day.</p>';
         } else {
-          btn.textContent = 'Send message \u2192';
+          btn.textContent = original;
           btn.disabled = false;
-          alert('Something went wrong. Please try again.');
+          alert('Something went wrong. Please try again or email us directly.');
         }
       }).catch(() => {
-        btn.textContent = 'Send message \u2192';
+        btn.textContent = original;
         btn.disabled = false;
-        alert('Something went wrong. Please try again.');
+        alert('Something went wrong. Please try again or email us directly.');
       });
     });
   }

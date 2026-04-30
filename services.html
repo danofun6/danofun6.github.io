@@ -3,50 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Peak Consults</title>
+  <title>Services | Peak Consulting</title>
   <meta name="description" content="Operations optimization, automation, AI implementation, and technology strategy consulting for small to mid-size businesses.">
-  <meta property="og:title" content="Services | Peak Consults">
+  <meta property="og:title" content="Services | Peak Consulting">
   <meta property="og:description" content="Operations optimization, automation, AI implementation, and technology strategy.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.peakconsults.com/services.html">
   <link rel="canonical" href="https://www.peakconsults.com/services.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
-  <meta name="theme-color" content="#0b0f14">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Peak Consults Services",
+    "name": "Peak Consulting Services",
     "itemListElement": [
-      {
-        "@type": "Service",
-        "position": 1,
-        "name": "Operations Optimization",
-        "description": "Technology stack audit, SaaS rationalization, workflow streamlining, and cost reduction with measurable targets."
-      },
-      {
-        "@type": "Service",
-        "position": 2,
-        "name": "Automation & AI Implementation",
-        "description": "Business process automation, AI strategy and implementation, custom AI tooling, data and reporting automation."
-      },
-      {
-        "@type": "Service",
-        "position": 3,
-        "name": "Software Architecture & Strategy",
-        "description": "System architecture design, legacy modernization, build-vs-buy analysis, technical debt reduction, scalability planning."
-      },
-      {
-        "@type": "Service",
-        "position": 4,
-        "name": "Technology Strategy",
-        "description": "Roadmap development, digital transformation planning, team and capability assessment, executive technology advisory."
-      }
+      { "@type": "Service", "position": 1, "name": "Operations Optimization", "description": "Technology stack audit, SaaS rationalization, workflow streamlining, cost reduction with measurable targets." },
+      { "@type": "Service", "position": 2, "name": "Automation & AI Implementation", "description": "Business process automation, AI strategy and implementation, custom AI tooling, data and reporting automation." },
+      { "@type": "Service", "position": 3, "name": "Software Architecture & Strategy", "description": "System architecture design, legacy modernization, build-vs-buy analysis, technical debt reduction, scalability planning." },
+      { "@type": "Service", "position": 4, "name": "Technology Strategy", "description": "Roadmap development, digital transformation planning, team and capability assessment, executive technology advisory." }
     ]
   }
   </script>
@@ -55,15 +35,16 @@
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
-    <nav class="nav-inner">
-      <a href="index.html" class="logo">Peak<span>Consults</span></a>
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="index.html" class="logo">
+        <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M2 20 L9 7 L13 13 L16 6 L22 20 Z" fill="none" stroke="#c8102e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>Peak<span>Consulting</span>
+      </a>
       <ul class="nav-links" id="primary-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
@@ -73,121 +54,139 @@
 
   <main id="main">
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <span class="section-label">Services</span>
-      <h1>What we deliver</h1>
-      <p>Hands-on consulting that cuts costs, eliminates inefficiency, and positions your business for sustainable growth.</p>
-    </div>
-  </section>
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Services</p>
+        <h1>Hands-on consulting that <em>delivers</em>.</h1>
+        <p class="lede">Four practices designed to cut costs, eliminate inefficiency, and position your business for sustainable growth &mdash; with measurable targets agreed up front.</p>
+      </div>
+    </section>
 
-  <!-- Service Details -->
-  <section class="section">
-    <div class="container">
+    <section class="section">
+      <div class="container">
 
-      <div class="service-detail fade-in">
-        <div>
-          <span class="service-detail-num">01</span>
-          <h3>Operations Optimization</h3>
-          <p>Most businesses are paying for tools they don't need, running processes that should be automated, and maintaining systems that create more work than they save. We fix that.</p>
-          <p>We conduct a thorough audit of your current technology stack, workflows, and operational processes to identify waste, redundancy, and opportunity.</p>
-        </div>
-        <div>
+        <article class="service-detail" id="operations">
+          <div>
+            <p class="detail-num">01 &mdash; Optimize</p>
+            <h3>Operations &amp; SaaS rationalization</h3>
+            <p>Most businesses are paying for tools they don&rsquo;t need, running processes that should be automated, and maintaining systems that create more work than they save. We fix that.</p>
+            <p>We audit your technology stack, workflows, and operational processes to identify waste, redundancy, and opportunity &mdash; with clear dollar targets and a roadmap.</p>
+          </div>
           <ul>
             <li>Technology stack audit and rationalization</li>
             <li>SaaS subscription optimization and consolidation</li>
             <li>Workflow analysis and streamlining</li>
             <li>Process documentation and standardization</li>
-            <li>Vendor evaluation and negotiation support</li>
+            <li>Vendor evaluation and contract negotiation support</li>
             <li>Cost reduction roadmap with measurable targets</li>
           </ul>
-        </div>
-      </div>
+        </article>
 
-      <div class="service-detail fade-in">
-        <div>
-          <span class="service-detail-num">02</span>
-          <h3>Automation & AI Implementation</h3>
-          <p>The right automation doesn't just save time — it eliminates entire categories of work. We identify the highest-impact opportunities and implement solutions that deliver immediate ROI.</p>
-          <p>From simple workflow automation to sophisticated AI-powered systems, we build solutions matched to your actual needs — not hype-driven technology for its own sake.</p>
-        </div>
-        <div>
+        <article class="service-detail" id="automation">
+          <div>
+            <p class="detail-num">02 &mdash; Automate</p>
+            <h3>Automation &amp; AI implementation</h3>
+            <p>Right-sized automation doesn&rsquo;t just save time &mdash; it removes whole categories of work. We identify the highest-impact opportunities, prove value, and only then scale.</p>
+            <p>From workflow automation to AI-powered systems, we build solutions matched to your actual needs &mdash; not hype-driven technology for its own sake.</p>
+          </div>
           <ul>
             <li>Business process automation</li>
             <li>AI strategy and implementation planning</li>
-            <li>Custom AI tool development</li>
+            <li>Custom AI tooling and integration</li>
             <li>Data pipeline automation</li>
             <li>Reporting and analytics automation</li>
             <li>Integration between existing systems</li>
           </ul>
-        </div>
-      </div>
+        </article>
 
-      <div class="service-detail fade-in">
-        <div>
-          <span class="service-detail-num">03</span>
-          <h3>Software Architecture & Strategy</h3>
-          <p>Bad architecture decisions compound over time. Whether you're building something new or inheriting a legacy system, the right architectural foundation saves enormous cost down the road.</p>
-          <p>With decades of experience building mission-critical software in regulated, high-stakes industries, we bring engineering rigor to every engagement.</p>
-        </div>
-        <div>
+        <article class="service-detail" id="architecture">
+          <div>
+            <p class="detail-num">03 &mdash; Architect</p>
+            <h3>Software architecture &amp; review</h3>
+            <p>Bad architecture decisions compound over time. Whether you&rsquo;re building something new or inheriting a legacy system, the right foundation saves enormous cost down the road.</p>
+            <p>With decades of experience building mission-critical software in regulated, high-stakes industries, we bring engineering rigor to every engagement.</p>
+          </div>
           <ul>
             <li>System architecture design and review</li>
             <li>Legacy system modernization planning</li>
-            <li>Build vs. buy analysis</li>
+            <li>Build-vs-buy analysis</li>
             <li>Technical debt assessment and reduction</li>
             <li>Security architecture review</li>
             <li>Scalability and performance planning</li>
           </ul>
-        </div>
-      </div>
+        </article>
 
-      <div class="service-detail fade-in">
-        <div>
-          <span class="service-detail-num">04</span>
-          <h3>Technology Strategy</h3>
-          <p>Technology decisions should be driven by business outcomes, not trends. We help you build a technology roadmap that aligns every dollar spent with measurable business value.</p>
-          <p>Whether you're evaluating a major platform investment, planning a digital transformation, or just trying to figure out if you need that enterprise contract — we provide clear, unbiased guidance.</p>
-        </div>
-        <div>
+        <article class="service-detail" id="strategy">
+          <div>
+            <p class="detail-num">04 &mdash; Advise</p>
+            <h3>Technology strategy</h3>
+            <p>Technology decisions should be driven by business outcomes, not trends. We help you build a roadmap that aligns every dollar spent with measurable business value.</p>
+            <p>Whether you&rsquo;re evaluating a major platform investment, planning a digital transformation, or weighing an enterprise contract, we provide clear, unbiased guidance.</p>
+          </div>
           <ul>
             <li>Technology roadmap development</li>
             <li>Digital transformation planning</li>
             <li>Team structure and capability assessment</li>
             <li>Technology budgeting and prioritization</li>
-            <li>Risk assessment and mitigation planning</li>
+            <li>Risk assessment and mitigation</li>
             <li>Executive technology advisory</li>
           </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Let&rsquo;s talk about your business.</h2>
+            <p>Every engagement starts with a conversation. Tell us what&rsquo;s not working &mdash; we&rsquo;ll show you what&rsquo;s possible.</p>
+          </div>
+          <div class="actions">
+            <a href="contact.html" class="btn btn-dark">Start a conversation <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
         </div>
       </div>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-section fade-in">
-        <h2>Let's talk about your business</h2>
-        <p>Every engagement starts with a conversation. Tell us what's not working and we'll show you what's possible.</p>
-        <a href="contact.html" class="btn btn-primary">Start a conversation <span class="arrow">&rarr;</span></a>
-      </div>
-    </div>
-  </section>
+    </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-inner">
-        <span class="footer-copy">&copy; 2026 Peak Consults. All rights reserved.</span>
-        <ul class="footer-links">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M2 20 L9 7 L13 13 L16 6 L22 20 Z" fill="none" stroke="#c8102e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>Peak<span>Consulting</span>
+          </a>
+          <p>Technology &amp; operations consulting. Engineering rigor from regulated, high-stakes industries &mdash; applied to your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#operations">Operations Optimization</a></li>
+            <li><a href="services.html#automation">Automation &amp; AI</a></li>
+            <li><a href="services.html#architecture">Software Architecture</a></li>
+            <li><a href="services.html#strategy">Technology Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Firm</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Our work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <p>Response within one business day. No obligation, no hard sell.</p>
+          <p style="margin-top:14px;"><a href="contact.html">Start a conversation &rarr;</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Peak Consulting &middot; All rights reserved</span>
+        <span>peakconsults.com</span>
       </div>
     </div>
   </footer>

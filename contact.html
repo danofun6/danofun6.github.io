@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Peak Consults</title>
-  <meta name="description" content="Get in touch with Peak Consults for technology and operations consulting. Let's discuss how we can help your business run leaner.">
-  <meta property="og:title" content="Contact | Peak Consults">
+  <title>Contact | Peak Consulting</title>
+  <meta name="description" content="Get in touch with Peak Consulting for technology and operations consulting. Let's discuss how we can help your business run better.">
+  <meta property="og:title" content="Contact | Peak Consulting">
   <meta property="og:description" content="Start a conversation about optimizing your business.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.peakconsults.com/contact.html">
   <link rel="canonical" href="https://www.peakconsults.com/contact.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
-  <meta name="theme-color" content="#0b0f14">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
-    <nav class="nav-inner">
-      <a href="index.html" class="logo">Peak<span>Consults</span></a>
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="index.html" class="logo">
+        <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M2 20 L9 7 L13 13 L16 6 L22 20 Z" fill="none" stroke="#c8102e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>Peak<span>Consulting</span>
+      </a>
       <ul class="nav-links" id="primary-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active nav-cta">Contact</a></li>
       </ul>
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
@@ -40,78 +41,100 @@
 
   <main id="main">
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <span class="section-label">Contact</span>
-      <h1>Let's talk</h1>
-      <p>Every engagement starts with a conversation. Tell us what's not working and we'll show you what's possible.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section">
-    <div class="container">
-      <div class="contact-layout fade-in">
-        <div class="contact-info">
-          <h2>Get in touch</h2>
-          <p>Whether you have a specific challenge in mind or just want to explore how technology can improve your operations, we'd like to hear from you.</p>
-
-          <h3 class="contact-subheading">What to expect</h3>
-          <ul class="approach-list approach-list-tight">
-            <li><span class="check" aria-hidden="true">&#10003;</span> Response within one business day</li>
-            <li><span class="check" aria-hidden="true">&#10003;</span> Initial consultation to understand your needs</li>
-            <li><span class="check" aria-hidden="true">&#10003;</span> Clear proposal with defined scope and outcomes</li>
-            <li><span class="check" aria-hidden="true">&#10003;</span> No obligation, no hard sell</li>
-          </ul>
-        </div>
-
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeyrveq" method="POST" novalidate>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject">
-              <option value="General Inquiry">General Inquiry</option>
-              <option value="Operations Optimization">Operations Optimization</option>
-              <option value="Automation &amp; AI">Automation &amp; AI</option>
-              <option value="Software Architecture">Software Architecture</option>
-              <option value="Technology Strategy">Technology Strategy</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Tell us about your business and what you're looking to improve..."></textarea>
-          </div>
-          <div class="form-honeypot" aria-hidden="true">
-            <label for="company-website">Leave this field blank</label>
-            <input type="text" id="company-website" name="_gotcha" tabindex="-1" autocomplete="off">
-          </div>
-          <button type="submit" class="form-submit">Send message <span class="arrow">&rarr;</span></button>
-          <p class="form-privacy">We use your details only to respond to your inquiry. No newsletters, no sharing.</p>
-        </form>
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Contact</p>
+        <h1>Let&rsquo;s <em>talk</em>.</h1>
+        <p class="lede">Every engagement starts with a conversation. Tell us what&rsquo;s not working &mdash; we&rsquo;ll show you what&rsquo;s possible.</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Whether you have a specific challenge in mind or just want to explore how technology can improve your operations, we&rsquo;d like to hear from you.</p>
+
+            <h3>What to expect</h3>
+            <ul class="approach-list">
+              <li><span class="check" aria-hidden="true">&#10003;</span> Response within one business day</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> Initial consultation to understand your needs</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> Clear proposal with defined scope and outcomes</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> No obligation, no hard sell</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqeyrveq" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Operations Optimization">Operations Optimization</option>
+                <option value="Automation &amp; AI">Automation &amp; AI</option>
+                <option value="Software Architecture">Software Architecture</option>
+                <option value="Technology Strategy">Technology Strategy</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your business and what you're looking to improve..."></textarea>
+            </div>
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="company-website">Leave this field blank</label>
+              <input type="text" id="company-website" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="form-submit">Send message <span class="arrow" aria-hidden="true">&rarr;</span></button>
+            <p class="form-privacy">We use your details only to respond to your inquiry. No newsletters, no sharing.</p>
+          </form>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-inner">
-        <span class="footer-copy">&copy; 2026 Peak Consults. All rights reserved.</span>
-        <ul class="footer-links">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M2 20 L9 7 L13 13 L16 6 L22 20 Z" fill="none" stroke="#c8102e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>Peak<span>Consulting</span>
+          </a>
+          <p>Technology &amp; operations consulting. Engineering rigor from regulated, high-stakes industries &mdash; applied to your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#operations">Operations Optimization</a></li>
+            <li><a href="services.html#automation">Automation &amp; AI</a></li>
+            <li><a href="services.html#architecture">Software Architecture</a></li>
+            <li><a href="services.html#strategy">Technology Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Firm</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Our work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <p>Response within one business day. No obligation, no hard sell.</p>
+          <p style="margin-top:14px;"><a href="contact.html">Start a conversation &rarr;</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Peak Consulting &middot; All rights reserved</span>
+        <span>peakconsults.com</span>
       </div>
     </div>
   </footer>
